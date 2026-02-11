@@ -1,6 +1,6 @@
 package pages.kazan;
 
-import pages.BasePage;
+import pages.base.KazanBasePage;
 
-public class KazanMainPage extends BasePage {
+public class KazanMainPage extends KazanBasePage {
 }

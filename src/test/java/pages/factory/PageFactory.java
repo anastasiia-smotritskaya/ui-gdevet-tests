@@ -1,6 +1,6 @@
 package pages.factory;
 
-import pages.BasePage;
+import pages.base.BasePage;
 import pages.kazan.KazanMainPage;
 import pages.spb.SPbMainPage;
 

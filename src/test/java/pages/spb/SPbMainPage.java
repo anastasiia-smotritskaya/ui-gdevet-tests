@@ -1,6 +1,6 @@
 package pages.spb;
 
-import pages.BasePage;
+import pages.base.SPbBasePage;
 
-public class SPbMainPage extends BasePage {
+public class SPbMainPage extends SPbBasePage {
 }
