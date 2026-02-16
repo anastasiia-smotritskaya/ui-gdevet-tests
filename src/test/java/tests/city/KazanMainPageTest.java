@@ -1,6 +1,7 @@
 package tests.city;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import pages.base.KazanBasePage;
 import tests.base.KazanBaseTest;
@@ -24,6 +25,7 @@ public class KazanMainPageTest extends KazanBaseTest {
     }
 
     @Test
+    @Disabled("CAPTCHA")
     void name() {
         assertEquals(KAZAN_MAIN_URL, url());
         page.logo_header.click();

@@ -18,7 +18,7 @@ public abstract class KazanBaseTest extends BaseTest {
     @Test
     @Disabled("CAPTCHA")
     @DisplayName("When you click on the logo, the Kazan main page should open")
-    public void headerLogoTest() {
+    void headerLogoTest() {
         page.logo_header.click();
         assertEquals(KAZAN_MAIN_URL, url());
     }
@@ -26,7 +26,7 @@ public abstract class KazanBaseTest extends BaseTest {
     @Test
     @Disabled("CAPTCHA")
     @DisplayName("When you click on the categories button, the categories page should open")
-    public void headerCategoriesTest() {
+    void headerCategoriesTest() {
         page.categories_header.click();
         assertEquals(KAZAN_MAIN_URL + CATEGORIES_URL, url());
         page.logo_header.click();
@@ -36,7 +36,7 @@ public abstract class KazanBaseTest extends BaseTest {
     @Test
     @Disabled("CAPTCHA")
     @DisplayName("When you click on the comments button, the comments page should open")
-    public void headerCommentsTest() {
+    void headerCommentsTest() {
         page.comments_header.click();
         assertEquals(KAZAN_MAIN_URL + COMMENTS_URL, url());
         page.logo_header.click();
@@ -46,7 +46,7 @@ public abstract class KazanBaseTest extends BaseTest {
     @Test
     @Disabled("CAPTCHA")
     @DisplayName("When you click on the clinics button, the clinics page should open")
-    public void headerClinicsTest() {
+    void headerClinicsTest() {
         page.vetkliniki_header.click();
         assertEquals(KAZAN_MAIN_URL + VETKLINIKI_URL, url());
         page.logo_header.click();
