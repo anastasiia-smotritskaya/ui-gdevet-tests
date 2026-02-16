@@ -1,6 +1,9 @@
 package pages.kazan;
 
-import pages.BasePage;
-
-public class KazanMainPage extends BasePage {
+import pages.base.KazanBasePage;
+/**
+ * Главная страница Казани, содержит элементы страницы, не считая header и footer
+ * https://kazan.gde-vet.ru/
+ */
+public class KazanMainPage extends KazanBasePage {
 }

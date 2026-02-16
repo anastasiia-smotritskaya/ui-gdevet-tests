@@ -1,11 +1,15 @@
 package pages.factory;
 
-import pages.BasePage;
+import pages.base.BasePage;
 import pages.kazan.KazanMainPage;
 import pages.spb.SPbMainPage;
 
 import static utils.ErrorMessages.CITY_NOT_FOUND;
 
+/**
+ * Фабрика для "главных" страниц — там где есть различия по городам
+ * Другие страницы (политика, соглашение) создаются напрямую
+ */
 public class PageFactory {
     public static BasePage createMainPage(City city) {
         switch (city) {

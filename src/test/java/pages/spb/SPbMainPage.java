@@ -1,6 +1,10 @@
 package pages.spb;
 
-import pages.BasePage;
+import pages.base.SPbBasePage;
 
-public class SPbMainPage extends BasePage {
+/**
+ * Главная страница СПБ, содержит элементы страницы, не считая header и footer
+ * https://spb.gde-vet.ru/
+ */
+public class SPbMainPage extends SPbBasePage {
 }
