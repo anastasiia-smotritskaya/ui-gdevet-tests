@@ -10,7 +10,7 @@ import static com.codeborne.selenide.WebDriverRunner.url;
 import static config.TestConfig.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CitySelectionPageTest {
+public class CitySelectionTest {
     private final static CitySelectionPage citySelectionPage = new CitySelectionPage();
 
     @BeforeEach
@@ -21,28 +21,28 @@ public class CitySelectionPageTest {
     @Test
     @DisplayName("Clicking the SPb button should open the SPb main page")
     void spbButtonTest() {
-        citySelectionPage.spbButton.click();
+        citySelectionPage.spb_button.click();
         assertEquals(SPB_MAIN_URL, url());
     }
 
     @Test
     @DisplayName("Clicking the Kazan button should open the Kazan main page")
     void kazanButtonTest() {
-        citySelectionPage.kazanButton.click();
+        citySelectionPage.kazan_button.click();
         assertEquals(KAZAN_MAIN_URL, url());
     }
 
     @Test
     @DisplayName("Clicking the policy button should open the policy page")
     void policyButtonTest() {
-        citySelectionPage.policyButton.click();
+        citySelectionPage.policy_button.click();
         assertEquals(SPB_MAIN_URL + POLICY_URL, url());
     }
 
     @Test
     @DisplayName("Clicking the terms of use button should open the terms of use page")
     void termsOfUseButtonTest() {
-        citySelectionPage.termsOfUseButton.click();
+        citySelectionPage.termsOfUse_button.click();
         assertEquals(SPB_MAIN_URL + TERMS_OF_USE_URL, url());
     }
 }

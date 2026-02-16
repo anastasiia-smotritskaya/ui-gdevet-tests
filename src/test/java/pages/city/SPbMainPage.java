@@ -1,4 +1,4 @@
-package pages.spb;
+package pages.city;
 
 import pages.base.SPbBasePage;
 

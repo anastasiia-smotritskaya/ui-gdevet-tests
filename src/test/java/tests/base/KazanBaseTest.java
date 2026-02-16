@@ -3,6 +3,8 @@ package tests.base;
 import org.junit.jupiter.api.*;
 import pages.base.KazanBasePage;
 
+import static com.codeborne.selenide.Condition.clickable;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.WebDriverRunner.url;
 import static config.TestConfig.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -51,5 +53,30 @@ public abstract class KazanBaseTest extends BaseTest {
         assertEquals(KAZAN_MAIN_URL + VETKLINIKI_URL, url());
         page.logo_header.click();
         assertEquals(KAZAN_MAIN_URL, url());
+    }
+
+    @Test
+    @Disabled("CAPTCHA")
+    @DisplayName("Offer text should be visible in the footer")
+    void offerTextTest() {
+        page.offer_text.shouldBe(visible);
+    }
+
+    @Test
+    @Disabled("CAPTCHA")
+    @DisplayName("Clicking the policy button should open the policy page")
+    void policyButtonTest() {
+        page.cookieCLose_button.click();
+        page.policy_button.shouldBe(clickable).click();
+        assertEquals(KAZAN_MAIN_URL + POLICY_URL, url());
+    }
+
+    @Test
+    @Disabled("CAPTCHA")
+    @DisplayName("Clicking the terms of use button should open the terms of use page")
+    void termsOfUseButtonTest() {
+        page.cookieCLose_button.click();
+        page.termsOfUse_button.click();
+        assertEquals(KAZAN_MAIN_URL + TERMS_OF_USE_URL, url());
     }
 }

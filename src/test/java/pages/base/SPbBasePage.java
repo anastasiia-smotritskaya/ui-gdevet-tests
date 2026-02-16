@@ -21,6 +21,6 @@ public abstract class SPbBasePage extends BasePage {
     public final SelenideElement vetkliniki_footer =
             $$(By.xpath("//nav//a[text()='Ветклиники']")).last();
 
-    public final SelenideElement offer_text = $(new ByText(ExpectedText.OFFER_TEXT));
+    public final SelenideElement offer_text = $(new ByText(ExpectedText.OFFER_SPB_TEXT));
     public final SelenideElement backToTop_button = $("#backtotop");
 }

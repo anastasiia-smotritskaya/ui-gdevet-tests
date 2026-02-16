@@ -1,8 +1,8 @@
 package pages.factory;
 
 import pages.base.BasePage;
-import pages.kazan.KazanMainPage;
-import pages.spb.SPbMainPage;
+import pages.city.KazanMainPage;
+import pages.city.SPbMainPage;
 
 import static utils.ErrorMessages.CITY_NOT_FOUND;
 

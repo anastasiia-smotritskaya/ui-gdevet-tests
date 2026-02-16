@@ -16,7 +16,7 @@ import static pages.factory.PageFactory.createMainPage;
  * Содержит тесты для главной страницы СПб
  * https://spb.gde-vet.ru/
  */
-public class SPbMainPageTest extends SPbBaseTest {
+public class SPbMainTest extends SPbBaseTest {
 
     @BeforeEach
     void setUp() {

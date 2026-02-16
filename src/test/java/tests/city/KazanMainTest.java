@@ -17,7 +17,7 @@ import static pages.factory.PageFactory.createMainPage;
  * Содержит тесты для главной страницы Казани
  * https://kazan.gde-vet.ru/
  */
-public class KazanMainPageTest extends KazanBaseTest {
+public class KazanMainTest extends KazanBaseTest {
     @BeforeEach
     void setUp() {
         open(KAZAN_MAIN_URL);

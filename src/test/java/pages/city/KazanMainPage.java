@@ -1,4 +1,4 @@
-package pages.kazan;
+package pages.city;
 
 import pages.base.KazanBasePage;
 /**
