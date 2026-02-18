@@ -1,5 +1,8 @@
 package tests.city;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -17,6 +20,9 @@ import static pages.factory.PageFactory.createMainPage;
  * Содержит тесты для главной страницы Казани
  * https://kazan.gde-vet.ru/
  */
+@Epic("UI Tests for Veterinary Aggregator")
+@Feature("Kazan")
+@Story("Kazan main page")
 public class KazanMainTest extends KazanBaseTest {
     @BeforeEach
     void setUp() {

@@ -1,6 +1,7 @@
 package tests.base;
 
 import com.codeborne.selenide.Configuration;
+import io.qameta.allure.Epic;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 /**
  * Базовый класс, содержащий настройки запуска для всех тестов
  */
+@Epic("UI Tests for Veterinary Aggregator")
 public class BaseTest {
     @BeforeEach
     void setUp() {

@@ -1,5 +1,8 @@
 package tests.other;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,6 +13,9 @@ import static com.codeborne.selenide.WebDriverRunner.url;
 import static config.TestConfig.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Epic("UI Tests for Veterinary Aggregator")
+@Feature("Other")
+@Story("City selection page")
 public class CitySelectionTest {
     private final static CitySelectionPage citySelectionPage = new CitySelectionPage();
 

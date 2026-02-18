@@ -9,4 +9,18 @@ public class TestConfig {
     public static final String CATEGORIES_URL = "categories/";
     public static final String COMMENTS_URL = "comments/";
     public static final String VETKLINIKI_URL = "vetkliniki/";
+    public static final String VETERINARY_URL = "veterinary/";
+
+    public static final String ADMIRALTEYSKIY_RAYON_URL = "admiralteyskiy-rayon/";
+    public static final String GATCHINSKIY_RAYON = "gatchinskiy-rayon/";
+    public static final String TSENTRALNYY_RAYON = "tsentralnyy-rayon/";
+
+    public static final String AVTOVO = "avtovo/";
+    public static final String ELEKTROSILA = "elektrosila/";
+    public static final String PROSPEKT_PROSVESCHENIYA = "prospekt-prosvescheniya/";
+
+    public static final String VSEVOLOZHSK = "vsevolozhsk/";
+    public static final String SHLISSELBURG = "shlisselburg/";
+    public static final String SOSNOVYY_BOR = "sosnovyy-bor/";
+
 }
