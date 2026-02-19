@@ -1,4 +1,4 @@
-package pages;
+package com.github.anastasiia.smotritskaya.gdevet.pages.other;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -11,11 +11,11 @@ import static com.codeborne.selenide.Selenide.$;
  * https://gde-vet.ru/
  */
 public class CitySelectionPage {
-    public final SelenideElement spbButton = $(byText("Санкт-Петербург"));
-    public final SelenideElement kazanButton = $(byText("Казань"));
+    public final SelenideElement spb_button = $(byText("Санкт-Петербург"));
+    public final SelenideElement kazan_button = $(byText("Казань"));
 
-    public final SelenideElement policyButton =
+    public final SelenideElement policy_button =
             $(byText("Политика обработки персональных данных"));
-    public final SelenideElement termsOfUseButton =
+    public final SelenideElement termsOfUse_button =
             $(byText("Пользовательское соглашение"));
 }
