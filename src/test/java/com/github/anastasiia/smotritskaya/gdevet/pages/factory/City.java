@@ -1,4 +1,4 @@
-package pages.factory;
+package com.github.anastasiia.smotritskaya.gdevet.pages.factory;
 
 public enum City {
     SPB("Санкт-Петербург"),

@@ -1,10 +1,12 @@
-package tests.base;
+package com.github.anastasiia.smotritskaya.gdevet.base;
 
 import org.junit.jupiter.api.*;
-import pages.base.KazanBasePage;
+import com.github.anastasiia.smotritskaya.gdevet.pages.base.KazanBasePage;
 
+import static com.codeborne.selenide.Condition.clickable;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.WebDriverRunner.url;
-import static config.TestConfig.*;
+import static com.github.anastasiia.smotritskaya.gdevet.config.TestConfig.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -18,7 +20,7 @@ public abstract class KazanBaseTest extends BaseTest {
     @Test
     @Disabled("CAPTCHA")
     @DisplayName("When you click on the logo, the Kazan main page should open")
-    public void headerLogoTest() {
+    void headerLogoTest() {
         page.logo_header.click();
         assertEquals(KAZAN_MAIN_URL, url());
     }
@@ -26,7 +28,7 @@ public abstract class KazanBaseTest extends BaseTest {
     @Test
     @Disabled("CAPTCHA")
     @DisplayName("When you click on the categories button, the categories page should open")
-    public void headerCategoriesTest() {
+    void headerCategoriesTest() {
         page.categories_header.click();
         assertEquals(KAZAN_MAIN_URL + CATEGORIES_URL, url());
         page.logo_header.click();
@@ -36,7 +38,7 @@ public abstract class KazanBaseTest extends BaseTest {
     @Test
     @Disabled("CAPTCHA")
     @DisplayName("When you click on the comments button, the comments page should open")
-    public void headerCommentsTest() {
+    void headerCommentsTest() {
         page.comments_header.click();
         assertEquals(KAZAN_MAIN_URL + COMMENTS_URL, url());
         page.logo_header.click();
@@ -46,10 +48,35 @@ public abstract class KazanBaseTest extends BaseTest {
     @Test
     @Disabled("CAPTCHA")
     @DisplayName("When you click on the clinics button, the clinics page should open")
-    public void headerClinicsTest() {
+    void headerClinicsTest() {
         page.vetkliniki_header.click();
         assertEquals(KAZAN_MAIN_URL + VETKLINIKI_URL, url());
         page.logo_header.click();
         assertEquals(KAZAN_MAIN_URL, url());
+    }
+
+    @Test
+    @Disabled("CAPTCHA")
+    @DisplayName("Offer text should be visible in the footer")
+    void offerTextTest() {
+        page.offer_text.shouldBe(visible);
+    }
+
+    @Test
+    @Disabled("CAPTCHA")
+    @DisplayName("Clicking the policy button should open the policy page")
+    void policyButtonTest() {
+        page.cookieCLose_button.click();
+        page.policy_button.shouldBe(clickable).click();
+        assertEquals(KAZAN_MAIN_URL + POLICY_URL, url());
+    }
+
+    @Test
+    @Disabled("CAPTCHA")
+    @DisplayName("Clicking the terms of use button should open the terms of use page")
+    void termsOfUseButtonTest() {
+        page.cookieCLose_button.click();
+        page.termsOfUse_button.click();
+        assertEquals(KAZAN_MAIN_URL + TERMS_OF_USE_URL, url());
     }
 }

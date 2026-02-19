@@ -1,4 +1,4 @@
-package pages.base;
+package com.github.anastasiia.smotritskaya.gdevet.pages.base;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
